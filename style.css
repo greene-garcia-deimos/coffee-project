@@ -1,39 +1,194 @@
-h1 {
-    text-align: center;
+html{
+    /*background-image: url("img/Coffee-beans-5.jpg");*/
+    /*background-repeat: repeat-x;*/
+}
+table {
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+td, th {
+    border: 1px solid #edba78;
+    padding: 5px 10px;
+}
+a:hover{
+    color:white;
+}
+a{
+    color: #c27559;
 }
 
-/*body {*/
-/*    !*background-color: #d4debd;*!*/
-/*}*/
+.jumbotron {
+    background-image: url("img/multi.jpg");
+    /*background-size: cover;*/
+}
 
-/*.jumbotron {*/
-/*    background-image: url("img/coffee.jpg");*/
+
+.tab-pane{
+    font-family: 'Alice';
+}
+
+h1{
+    font-family: 'Lobster Two';
+    font-size: 50px;
+    color: #eda531;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+body {
+    background-color: #f0d94f;
+    /*background-image: url("img/Coffee-beans-5.jpg");*/
+    /*background-repeat: repeat-x;*/
+}
+/*.jumbotron{*/
+/*    background-image: url("img/pourcoffee.jpeg");*/
 /*    text-align: center;*/
 /*    background-repeat: no-repeat;*/
 /*    align-content: center;*/
-/*    background-size: 550px 650px;*/
-/*    padding-bottom: 400px;*/
-
+/*    background-size: auto;*/
+/*    padding-bottom: 100px;*/
+/*    font-family: 'Alice';*/
 /*}*/
 
+/*top nav bar */
+.nav-tabs {
+    background-color: #c27559;
+    color: #5c223a
+    font-family: 'Alice
+}
 
-/*@media screen and (min-width: 365px) {*/
-/*    body {*/
-/*        !*background-color: #d4debd;*!*/
-/*    }*/
+.navbar-toggler{
+    background-color: #c27559;
+    color: #5c223a
+    font-family: 'Alice
+
+}
+
+#navbarNavAltMarkup{
+    background-color: #e5ecf1;
+    color: #5c223a
+    font-family: 'Alice
+}
 
 
+/*THIS TAB ALTERS THE BOTTOM NAV BAR COLOR THAT HOLDS INFO */
+.tab-content {
+    background-color: #9cbb9c;
+    color: #5c223a
+    font-family: 'Alice
+}
+
+
+#myTab > li > a{
+    background-color: #9cbb9c;
+    color: #5c223a
+    font-family: 'Alice
+}
+
+.nav-tabs > li.active > a {
+    color: red;
+    font-size: 16px;
+}
+
+.nav-tabs > li > a {
+    color: #e5ecf1;
+    font-family: "'Alice";
+}
+.card-body{
+    background-color: #f0d94f;
+}
+.card-header{
+    background-color: #eda531;
+}
+
+.tab-content > img{
+
+}
+
+/*bottom nav bar */
+/*.nav-item {*/
+/*    background-color: #c27559;*/
+/*    color: #5c223a*/
+/*    font-family: 'Alice*/
 /*}*/
 
-
-/*@media screen and (min-width: 700px) {*/
-/*    body {*/
-/*        !*background-color: #9f95ff;*!*/
-/*    }*/
-
-/*    .coffee {*/
-/*        !*visibility:;*!*/
-/*    }*/
+.nav-link {
+    background-color: #9cbb9c;
+    color: #5c223a
+    font-family: 'Alice
+}
 
 
-/*}*/
+/*Font inisde pills home tab*/
+#pills-home-tab{
+    color: #FFFFFF;
+    font-family: 'Alice';
+}
+/*End */
+/*THIS WILL CHANGE THE COLOR OF NAV PILLS */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #9cbb9c;
+    font-family: 'Alice';
+}
+/*END */
+/*FONT INSIDE TABS */
+#pills-profile-tab{
+    color: #FFFFFF;
+    font-family: 'Alice';
+}
+/*ENDS*/
+/*DROP DOWN INFO WHEN ABOUT IS HIT */
+#pills-home {
+    color: #FFFFFF;
+    font-family: 'Alice';
+}
+/*END*/
+#pills-profile{
+    color: #FFFFFF;
+    font-family: 'Alice';
+}
+/*END*/
+/*SEARCH BUTTON ON SEARCH FORM*/
+.btn-outline-success {
+    background-color: #c27559;
+    color: white;
+    border-color: white;
+    font-family: 'Alice';
+}
+/*END */
+/*THIS IS FOR THE WHEN YOU INPUT INFORMATION INTO SEARCH BAR */
+.form-control{
+    background-color: #9cbb9c;
+}
+/*END*/
+/*SELECT FORM */
+label{
+    font-family: 'Alice';
+}
+select{
+    font-family: 'Alice';
+    color: #eda531;
+}
+/*END*/
+/*THIS CHANGES THE COLOR BACKGROUND WHEN YOU SELECT ROAST */
+option {
+    background-color: #c27559 !important;
+}
+@media screen and (min-width:800px) {
+    body {
+        background-color: #f0d94f;
+        /*background-image: url("img/coffee.jpg");*/
+    }
+
+
+.jumbotron {
+    background-image: url("img/coffee-banner.jpg");
+    /*background-size: cover;*/
+}
+    /*.jumbotron{*/
+    /*    display: none;*/
+    /*}*/
+    h1{
+        font-size: 100px;
+    }
+}
