@@ -114,14 +114,18 @@ function submitNewCoffee(e) {
             roast: newRoastSelection.value
         };
         // Update the currently viewed coffee list
-        coffeeSubmission.push(newCoffee);
+        // coffeeSubmission.push(newCoffee);
+
         // Update entire coffee list
         coffees.push(newCoffee);
+        // Reset User Interaction
         newRoastSelection.selectedIndex = "0";
         newEnteredCoffee.value = "";
         disableNewCoffeeName(newRoastSelection.value);
+        // Can delete possibly if not wanted
         updateCoffees(e);
-        section.innerHTML = renderCoffees(coffeeSubmission);
+        dynamicSelection();
+        newCoffeeSection.innerHTML = renderCoffees(coffees);
     }
 }
 
@@ -159,6 +163,7 @@ var enteredCoffee = document.querySelector('#coffeeEntered');
 var newCoffeeSubmit = document.querySelector('#new-coffee-submit');
 var newRoastSelection = document.querySelector('#new-roast-selection');
 var newEnteredCoffee = document.querySelector('#new-coffee-name');
+var newCoffeeSection = document.querySelector('#new-coffees');
 
 // Display coffee selection on launch
 section.innerHTML = renderCoffees(coffees);
