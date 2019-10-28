@@ -108,18 +108,21 @@ function submitNewCoffee(e) {
     } else if (newEnteredCoffee.value === "") {
         alert("Please enter a name");
     } else {
-        coffeeSubmission.push({
+        var newCoffee = {
             id: coffees.length + 1,
             name: newEnteredCoffee.value,
             roast: newRoastSelection.value
-        });
+        };
+        // Update the currently viewed coffee list
+        coffeeSubmission.push(newCoffee);
+        // Update entire coffee list
+        coffees.push(newCoffee);
         newRoastSelection.selectedIndex = "0";
         newEnteredCoffee.value = "";
         disableNewCoffeeName(newRoastSelection.value);
         updateCoffees(e);
         section.innerHTML = renderCoffees(coffeeSubmission);
     }
-    console.log(coffees.length);
 }
 
 var newCoffeeRoast = function (roast) {
